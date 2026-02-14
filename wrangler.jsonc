@@ -1,0 +1,19 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "school-survey",
+	"compatibility_date": "2025-04-04",
+	"compatibility_flags": [
+        "nodejs_compat"
+    ],
+	"main": "./workers/app.ts",
+	"observability": {
+		"enabled": true
+	},
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "survey-responses",
+			"database_id": "c059721d-a240-4b31-8798-a03bede883cb",
+		}
+	]
+}
